@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cooks choice</title>
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css//bootstrap.min.css">
+        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" alt="" class="w-75">
+                </a>
+                <span class="d-lg-none d-block" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <label class="burger" for="burger">
+                        <input type="checkbox" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </span>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll liststtyle">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="iconheader">
+                        <ul>
+                            <li>
+                                <a href=""><img src="images/search.svg" alt=""></a>
+                            </li>
+
+                            <li>
+                                <a href=""><img src="images/use.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <div class="position-relative">
+                                    <a href=""><img src="images/cart.svg" alt=""></a>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        1
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="bannersection">
+        <div id="carousel" class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item" style="background-image: url(images/bannerfull.png);
+                background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+               width: 100%;
+               padding-top: 60px;
+               ">
+                    <div class="bannertext text-center" data-aos="fade-up"
+                    data-aos-duration="3000">
+                        <h1>Revolutionize Your <br />
+                            <span>Cooking Experience</span>
+                        </h1>
+                        <h4>with Cook’s Choice Unique Cookware</h4>
+                        <p>Now there is a better way with Cook´s Choice Better Breader Bowl.
+                        </p>
+                        <button class="bannerbtn">SHOP NOW</button>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(https://img.freepik.com/free-vector/background-template-design-with-happy-chef-cooking_1308-43060.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                padding-top: 60px;
+                ">
+                    <div class="bannertext text-center">
+                        <h1>Revolutionize Your <br />
+                            <span>Cooking Experience</span>
+                        </h1>
+                        <h4>with Cook’s Choice Unique Cookware</h4>
+                        <p>Now there is a better way with Cook´s Choice Better Breader Bowl.
+                        </p>
+                        <button class="bannerbtn">SHOP NOW</button>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(https://i.pinimg.com/1200x/26/86/01/2686016bb2b590b6e52e7b2eadcbca47.jpg);
+                 background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                padding-top: 60px;
+                ">
+                    <div class="bannertext text-center">
+                        <h1>Revolutionize Your <br />
+                            <span>Cooking Experience</span>
+                        </h1>
+                        <h4>with Cook’s Choice Unique Cookware</h4>
+                        <p>Now there is a better way with Cook´s Choice Better Breader Bowl.
+                        </p>
+                        <button class="bannerbtn">SHOP NOW</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls ">
+                <button class="prev arrow-btn left-btn" onclick="prevSlide()"><img src="images/Vector2.png"
+                        alt=""></button>
+                <button class="next arrow-btn right-btn" onclick="nextSlide()"><img src="images/Vector1.png"
+                        alt=""></button>
+            </div>
+            <div class="carousel-indicators d-none d-lg-block">
+                <img src="images/dott.svg" alt="" class="indicator" onclick="goToSlide(0)">
+                <img class="indicator active" onclick="goToSlide(1)" src="images/dottactive.svg" alt="">
+                <img class="indicator" onclick="goToSlide(2)" src="images/dott.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class=" d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                    <!-- Left Section -->
+                    <div class="content-text col-lg-4 text-center text-lg-start pt-lg-5">
+                        <h2>WHY CHOOSE US</h2>
+                        <p>
+                            Why waste time and energy making Bacon in the traditional way
+                            when you can simply use the Bacon Wizard to cook it within a few
+                            minutes in the Microwave!
+                        </p>
+                        <p>
+                            Fat drips away from the bacon for less fat and healthier, crispier
+                            bacon every time! Cooks Up to a Full pound of bacon at a time.
+                            Bacon is cooked evenly and perfectly.
+                        </p>
+                        <a href="#"  onclick="playVideo()" class="btn-dark" data-bs-toggle="modal" data-bs-target="#videoModal">WATCH VIDEO
+                            <span ><img src="images/video.png" alt=""></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <button class="btn">40% LESS FAT</button>
+                <button class="btn">PERFECT SIZE</button>
+                <button class="btn">EASY CLEAN UP</button>
+            </div>
+        </div>
+    </section>
+    <section class="whatcustomer">
+        <div class="container-fluid p-0">
+            <div class="container">
+                <div class=" d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                    <div class="content-text col-lg-4 text-center text-lg-start pt-lg-5">
+                        <h2>WHAT CUSTOMER <br /> SAY’S ABOUT US</h2>
+                        <ul class="py-3">
+                            <li><img src="images/star.svg" alt=""></li>
+                            <li><img src="images/star.svg" alt=""></li>
+                            <li><img src="images/star.svg" alt=""></li>
+                            <li><img src="images/star.svg" alt=""></li>
+                            <li><img src="images/star.svg" alt=""></li>
+                        </ul>
+                        <h3>Over 5,000 5-star reviews for our <br /> award-winning products</h3>
+                        <div class="arow">
+                            <img id="arrow-left" src="images/arrowleft.png" alt="Left Arrow">
+                            <img id="arrow-right" src="images/arrowright.png" alt="Right Arrow">
+                        </div>
+                    </div>
+                    <div class="content-text col-lg-8 text-center text-lg-start pt-5">
+                        <div class="row">
+                            <div class="col-md-12 p-0">
+                                <div id="news-slider" class="owl-carousel owl-theme">
+                                    <div class="post-slide">
+                                        <img src="images/shap.svg" class="shaps" alt="">
+                                        <img src="images/shadow.png" class="shaps1" alt="">
+                                        <div class="text-center">
+                                            <div class="post-img">
+                                                <img src="images/img.png" alt="">
+                                            </div>
+                                            <h4>Easy</h4>
+                                            <ul class="py-3">
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                            </ul>
+                                            <p>It’s pretty cool making cups of cakes or brownies ect, I’m only giving it
+                                                3 stars on durability bcz it came kinda scratched and bent, but on the
+                                                side, so it doesn’t bother me to continue using it</p>
+                                            <h5>Ashley Kay</h5>
+                                        </div>
+                                    </div>
+                                    <div class="post-slide">
+                                        <img src="images/shap.svg" class="shaps" alt="">
+                                        <img src="images/shadow.png" class="shaps1" alt="">
+                                        <div class="text-center">
+                                            <div class="post-img">
+                                                <img src="images/user1.png" alt="">
+                                            </div>
+                                            <h4>Endless possibilities. <br /> Brownie bowl, etc</h4>
+                                            <ul class="py-3">
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                            </ul>
+                                            <p>This is a fun product to change it up on your meals. Cornbread bowl with
+                                                chili. Brownie bowl and add ice cream after cooking. So many
+                                                possibilities. </p>
+                                            <h5>tx grmol</h5>
+                                        </div>
+                                    </div>
+                                    <div class="post-slide">
+                                        <img src="images/shap.svg" class="shaps" alt="">
+                                        <img src="images/shadow.png" class="shaps1" alt="">
+                                        <div class="text-center">
+                                            <div class="post-img">
+                                                <img src="images/img2.png" alt="">
+                                            </div>
+                                            <h4>Inspiring !</h4>
+                                            <ul class="py-3">
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                                <li><img src="images/star.svg" alt=""></li>
+                                            </ul>
+                                            <p>Ooooh- I LOVE this pan !! It came with a booklet of recipes to try. It's
+                                                very cool that you don't have to alter your regular recipes hardly at
+                                                all. </p>
+                                            <h5>s.crowe</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="leftside">
+                        <ul>
+                            <li>
+                                <a href="">© 2023 Cook's Choice </a>
+                            </li>
+                            <li>
+                                <a href="">&nbsp; |&nbsp; Refund policy</a>
+                            </li>
+                            <li>
+                                <a href="">&nbsp; |&nbsp; Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="">&nbsp; |&nbsp; Terms of service</a>
+                            </li>
+                            <li>
+                                <a href="">&nbsp; |&nbsp; Shipping policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <div class="rightside">
+                        <ul>
+                            <li>
+                                <a href=""><img src="images/amex.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/pay.png" alt="" class="img-fluid"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/i.png" alt="" class="img-fluid"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/discover.png" alt="" class="img-fluid"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/gpay.png" alt="" class="img-fluid"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/paypal.png" alt="" class="img-fluid"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/paypal2.png" alt="" class="img-fluid"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/visa.png" class="img-fluid" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        let currentSlide = 0;
+        let slides = document.querySelectorAll('.carousel-item');
+        let indicators = document.querySelectorAll('.indicator');
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentSlide);
+            });
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        setInterval(nextSlide, 3000);
+
+        updateCarousel();
+    </script>
+    <script>
+        window.onload = function () {
+            var owl = $("#news-slider").owlCarousel({
+                loop: true, // Enables infinite scrolling
+                margin: 0,
+                nav: false, // Disable default nav
+                dots: true, // Show dots for pagination
+                items: 3,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+
+            // Custom left arrow click event
+            $("#arrow-left").click(function () {
+                owl.trigger('prev.owl.carousel'); // Go to previous item
+            });
+
+            // Custom right arrow click event
+            $("#arrow-right").click(function () {
+                owl.trigger('next.owl.carousel'); // Go to next item
+            });
+        };
+
+
+        
+    </script>
+    <script>
+        AOS.init();
+      </script>
+        <script>
+            function playVideo() {
+              const videoContainer = document.querySelector('.video-container');
+              const video = document.getElementById('video');
+        
+              videoContainer.style.display = 'none'; // Hide the thumbnail and play button
+              video.classList.remove('d-none'); // Show the video
+              video.play(); // Play the video
+            }
+          </script>
+</body>
+</html>

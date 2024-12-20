@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+body{
+    overflow-x: hidden;
+}
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 12px 0px 12px;
+}
+
+@font-face {
+    font-family: beton;
+    src: url('/fonts/Beton\ CG\ ExtraBold\ Regular.otf');
+}
+
+@font-face {
+    font-family: OpenSans-CondLight;
+    src: url('/fonts/OpenSans-CondBold.ttf');
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url('/fonts/OpenSans-CondLight.ttf');
+}
+
+
+@media (max-width: 1023px) {
+    html {
+        height: 100%
+    }
+}
+
+@media (max-width: 1023px) {
+    body {
+        height: 100%
+    }
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+iframe {
+    border: 0
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+[tabindex="-1"]:focus {
+    outline: none !important
+}
+
+/* header start */
+.liststtyle .nav-item {
+    padding: 0px 20px;
+}
+
+.liststtyle li a {
+    font-family: OpenSans-CondLight !important;
+    font-size: 16px !important;
+    text-transform: uppercase;
+    color: #000;
+    transition: all 0.9s;
+}
+.liststtyle li a:hover{
+    color: #ff7f00;
+}
+
+.iconheader ul li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.iconheader .bg-danger {
+    background-color: #F47C27 !important;
+}
+
+/* From Uiverse.io by Cevorob */
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+}
+
+.burger input {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+
+.burger input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.burger input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.burger input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+/* header end  */
+/* banner section start */
+/* From Uiverse.io by levxyca */
+.bannerbtn {
+    font-size: 16px;
+    color: #fff;
+    font-family: OpenSans-CondLight !important;
+    text-transform: uppercase;
+    padding: 18px 56px;
+    border-radius: 10px;
+    border: 0px solid #4E2000;
+    background: #F47C27;
+    box-shadow: 3px 3px #4E2000;
+    cursor: pointer;
+    margin: 35px 0;
+}
+.bannerbtn:hover{
+    background-color: #ff7f00;
+}
+
+.bannerbtn:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.bannertext h1 {
+    font-size: 50px;
+    font-family: beton;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #1F1D1D;
+}
+
+.bannertext span {
+    color: #F47C27;
+}
+
+.bannertext h4 {
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 56px;
+    letter-spacing: 4%;
+}
+
+.bannertext p {
+    font-family: OpenSans-CondLight !important;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 4%;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 620px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+}
+
+.carousel-controls button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 65px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-indicators button {
+    width: 100px;
+    height: 2px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .4);
+    cursor: pointer;
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 5px;
+}
+
+.carousel-indicators button.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 0;
+    background-color: #fff;
+    animation: loading 3s;
+}
+
+.carousel-indicators {
+    margin: 0px !important;
+}
+
+.carousel-indicators img {
+    padding: 0px 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button-container {
+    display: flex;
+}
+
+.arrow-btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.left-btn {
+    background-color: #000;
+    /* Black background */
+    border-right: 0px solid #fff;
+    /* Divider effect */
+}
+
+.right-btn {
+    background-color: #ff7f00;
+    /* Orange background */
+}
+
+.arrow-btn span {
+    display: inline-block;
+    line-height: 1;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100px;
+    }
+}
+
+
+/* subbanner */
+.content-section {
+    background: url(/images/sub.png) no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 50px 0px;
+    height: 600px;
+    position: relative;
+}
+
+.content-text h2 {
+    font-family: beton;
+    font-size: 35px;
+    line-height: 56px;
+    color: #1F1D1D;
+}
+
+.content-text p {
+    font-family: OpenSans-CondLight !important;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 4%;
+    margin-bottom: 20px;
+}
+
+.buttons-container .btn {
+    display: block;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #F47C27;
+    border: none;
+    border-radius: 25px 0px 0px 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 180px;
+    font-family: OpenSans-CondLight !important;
+}
+
+.buttons-container .btn:hover {
+    background-color: darkorange;
+}
+
+.product-image {
+    width: 100%;
+    margin: auto;
+}
+
+.buttons-container {
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+.btn-dark {
+    text-decoration: none;
+    font-family: OpenSans-CondLight !important;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 23px;
+    color: #000000;
+    display: block;
+}
+
+a.btn-dark span {
+    margin-left: 15px;
+}
+
+/* whatcustomer start */
+.whatcustomer .content-text h2 {
+    font-family: beton;
+    font-size: 35px;
+    line-height: 40px;
+    color: #1F1D1D;
+}
+
+.whatcustomer {
+    padding: 60px 0px;
+}
+
+.whatcustomer .content-text ul li {
+    display: inline-block;
+}
+
+.whatcustomer .content-text h3 {
+    font-family: OpenSans-Light;
+    font-size: 35px;
+    line-height: 40px;
+    color: #1F1D1D;
+    padding-top: 20px;
+    font-style: italic;
+}
+
+.arow {
+    margin-top: 50px;
+}
+
+.arow img+img {
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.post-slide {
+    padding: 20px;
+    margin: 0 15px;
+    position: relative;
+    background-color: #F6EFEA;
+    border-radius: 30px;
+    height: 450px;
+}
+
+.post-slide h4 {
+    font-family: beton !important;
+    font-size: 20px;
+    line-height: 40px;
+    color: #1F1D1D;
+    padding-top: 30px;
+}
+
+.post-slide h4 {
+    font-family: beton !important;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1F1D1D;
+    padding-top: 30px;
+}
+
+.post-slide h5 {
+    font-family: "Permanent Marker", serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: #F47C27;
+    letter-spacing: 4%;
+    position: relative;
+}
+img.shaps {
+    position: absolute;
+    top: 25px;
+    width: 35px !important;
+    height: 35px;
+    left: 20px;
+}
+img.shaps1 {
+    position: absolute;
+    bottom:40px ;
+    width: 70px !important;
+    height: 70px;
+    right: 20px;
+}
+.post-slide h5::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    height: 3px;
+    width: 25px;
+    background-color: #F47C27;
+}
+
+.post-slide .post-img>img {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+
+section.whatcustomer .container {
+    margin-right: 0px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 360px) {
+    .post-bar>li:last-child {
+        margin-top: 8px;
+        padding: 0;
+    }
+}
+
+/* whatcustomer end */
+
+/* footer start */
+footer {
+    background-color: #000;
+    padding: 12px 0px;
+}
+
+.leftside ul li,
+.rightside ul li {
+    display: inline-block;
+    padding: 0px 0px;
+}
+
+.leftside ul li a {
+    text-decoration: none;
+    font-family: OpenSans-CondLight !important;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 40px;
+}
+/* video */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  .thumbnail {
+    width: 100%;
+    height: auto;
+  }
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px 15px;
+  }
+
+@media(max-width:991px){
+    .bannertext h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .bannertext h4 {
+        font-size: 16px;
+        line-height: 30px;
+
+    }
+    .content-section {
+         background: none;
+    }
+    .buttons-container {
+         position: unset; 
+    }
+    .buttons-container .btn {
+        border-radius: 25px;
+        width: 100%;
+    }
+    .content-text h2 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .whatcustomer .content-text h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .whatcustomer .content-text h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .arow img {
+        margin-left: 20px;
+        cursor: pointer;
+        width: 15px;
+    }
+}
